@@ -9,6 +9,9 @@ class HeightMapGenerator : public QMainWindow
 
 public:
 	HeightMapGenerator(QWidget *parent = Q_NULLPTR);
+public slots:
+	void on_spinBox_valueChanged(int);
+	void on_spinBox_2_valueChanged(int);
 
 private:
 	Ui::HeightMapGeneratorClass ui;
