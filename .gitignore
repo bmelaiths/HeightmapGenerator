@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+*.vs
+/HeightMapGenerator/HeightMapGenerator/x64
+/HeightMapGenerator/HeightMapGenerator/HeightMapGenerator.vcxproj.user
