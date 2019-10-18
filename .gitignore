@@ -32,5 +32,5 @@
 *.app
 *.vs
 /HeightMapGenerator/HeightMapGenerator/x64
-/HeightMapGenerator/HeightMapGenerator/HeightMapGenerator.vcxproj.user
+*.vcxproj.user
 /HeightMapGenerator/x64/Debug

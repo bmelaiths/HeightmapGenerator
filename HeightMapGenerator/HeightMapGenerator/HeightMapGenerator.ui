@@ -27,7 +27,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBox">
+         <widget class="QSpinBox" name="widthSpinBox">
           <property name="maximum">
            <number>4096</number>
           </property>
@@ -48,7 +48,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBox_2">
+         <widget class="QSpinBox" name="heightSpinBox">
           <property name="maximum">
            <number>2048</number>
           </property>
@@ -75,7 +75,7 @@
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="canvas">
       <property name="text">
        <string/>
       </property>

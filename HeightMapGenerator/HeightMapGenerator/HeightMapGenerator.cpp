@@ -5,24 +5,25 @@ HeightMapGenerator::HeightMapGenerator(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-	QPixmap* pmap = new QPixmap(ui.spinBox->value(), ui.spinBox_2->value());
-	ui.label_3->setPixmap(*pmap);
-	delete pmap;
+	onMapSizeChange();
 
 
 }
 
-void HeightMapGenerator::on_spinBox_2_valueChanged(int)
+void HeightMapGenerator::on_heightSpinBox_valueChanged(int)
 {
-	QPixmap* pmap = new QPixmap(ui.spinBox->value(), ui.spinBox_2->value());
-	ui.label_3->setPixmap(*pmap);
-	delete pmap;
+	onMapSizeChange();
 }
 
-void HeightMapGenerator::on_spinBox_valueChanged(int)
+void HeightMapGenerator::on_widthSpinBox_valueChanged(int)
 {
-	QPixmap* pmap = new QPixmap(ui.spinBox->value(), ui.spinBox_2->value());
-	ui.label_3->setPixmap(*pmap);
+	onMapSizeChange();
+}
+
+void HeightMapGenerator::onMapSizeChange()
+{
+	QPixmap* pmap = new QPixmap(ui.widthSpinBox->value(), ui.heightSpinBox->value());
+	ui.canvas->setPixmap(*pmap);
 	ui.centralWidget->adjustSize();
 	adjustSize();
 	delete pmap;
